@@ -1,0 +1,170 @@
+body {
+  margin: 0;
+  background-color: #333;
+}
+
+i {
+  color: #bbb;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.jumbotron {
+  margin: 0;
+}
+
+.jumbotron h3 {
+  color: #7c3b08;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+.header {
+  background-image: url('https://static.pexels.com/photos/12063/pexels-photo-12063.jpeg');
+  background-size: cover;
+  padding: 30px;
+  padding-top: 450px;
+  padding-bottom: 150px;
+  color: white;
+  position:relative;
+}
+
+.header:before{
+  content: "";
+  display: block;
+  filter: blur(0px) brightness(0.4);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: inherit;
+  z-index: 0;
+}
+
+.header .hello-world {
+  font-size: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+
+.header h1 {
+  font-size: 3em;
+}
+
+.link-style,
+.link-style:visited {
+  color: #fff;
+}
+
+.link-style:hover{
+  color: #ddd;
+}
+
+.link-label {
+  opacity: 0.5;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+
+.about {
+  background: #ddd;
+}
+
+.about button {
+  background: #333;
+  border: 2px solid #333;
+  color: white;
+  margin-right: 20px;
+}
+
+.about button:hover {
+  background: #444;
+  border: 2px solid #333;
+}
+
+.about h1 {
+  font-size: 3em;
+}
+
+.skillset {
+  background-image: url('https://pixabay.com/get/e031b50b21fd1c22d2524518a33219c8b66ae3d110b2114490f1c97a/code-944499_1280.jpg');
+  background-size: cover;
+  color: white;
+  position:relative;
+}
+
+.skillset:before{
+  content: "";
+  display: block;
+  filter: blur(1px) brightness(0.4);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: inherit;
+  z-index: 0;
+}
+
+.contact {
+  background-image: url('https://static.pexels.com/photos/34088/pexels-photo.jpg');
+  background-size: cover;
+  color: white;
+  position: relative;
+}
+
+.contact:before{
+  content: "";
+  display: block;
+  filter: blur(1px) brightness(0.5);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: inherit;
+  z-index: 0;
+}
+
+.contact h1,
+.skillset h1,
+.portfolio h1 {
+  font-size: 3em;
+}
+
+footer {
+  background-color: 333;
+  color: white;
+  height: 100px;
+}
+
+footer ul {
+  display: flex;
+  list-style: none;
+  font-weight: 700;
+  padding: 30px;
+  color: #ddd;
+}
+
+@media (max-width: 576px) {
+  .header {
+    padding: 30px;
+  }
+
+  .header h1,
+  .about h1,
+  .contact h1 {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 768px) {
+  .about img {
+    margin-bottom: 30px;
+  }
+}
