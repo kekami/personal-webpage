@@ -23,7 +23,7 @@ i {
 }
 
 .header {
-  background-image: url('https://static.pexels.com/photos/12063/pexels-photo-12063.jpeg');
+  background-image: url('./images/header.jpg');
   background-size: cover;
   padding: 30px;
   padding-top: 450px;
@@ -92,7 +92,7 @@ i {
 }
 
 .skillset {
-  background-image: url('https://pixabay.com/get/e031b50b21fd1c22d2524518a33219c8b66ae3d110b2114490f1c97a/code-944499_1280.jpg');
+  background-image: url('./images/skillset.jpg');
   background-size: cover;
   color: white;
   position:relative;
@@ -112,7 +112,7 @@ i {
 }
 
 .contact {
-  background-image: url('https://static.pexels.com/photos/34088/pexels-photo.jpg');
+  background-image: url('./images/contact.jpg');
   background-size: cover;
   color: white;
   position: relative;
