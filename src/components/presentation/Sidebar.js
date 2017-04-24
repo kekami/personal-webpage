@@ -4,7 +4,7 @@ import { Menu, Brand, Item } from 'impromptu-react-sidemenu';
 class Sidebar extends Component {
   render() {
     return (
-      <Menu position="left">
+      <Menu position="left" autoClose={true}>
         <Brand>
           <a href="#home">Kevin Kamimura</a>
         </Brand>

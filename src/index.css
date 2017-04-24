@@ -49,7 +49,7 @@ i {
   font-size: 1.5em;
   font-weight: 700;
   text-transform: uppercase;
-  opacity: 0.6;
+  opacity: 0.5;
 }
 
 .header h1 {
@@ -59,6 +59,7 @@ i {
 .link-style,
 .link-style:visited {
   color: #fff;
+  font-size: 1.5em;
 }
 
 .link-style:hover{
@@ -111,6 +112,14 @@ i {
   z-index: 0;
 }
 
+.skillset .badge {
+  font-weight: 300;
+}
+
+.portfolio img {
+  margin-bottom: 50px;
+}
+
 .contact {
   background-image: url('./images/contact.jpg');
   background-size: cover;
@@ -137,16 +146,17 @@ i {
   font-size: 3em;
 }
 
-footer {
+.footer {
   background-color: 333;
   color: white;
   height: 100px;
 }
 
-footer ul {
+.footer ul {
   display: flex;
   list-style: none;
   font-weight: 700;
+  font-size: 0.7em;
   padding: 30px;
   color: #ddd;
 }
@@ -156,6 +166,10 @@ footer ul {
     padding: 30px;
   }
 
+  .header .link-style {
+    font-size: 0.8em;
+  }
+
   .header h1,
   .about h1,
   .contact h1 {
@@ -163,8 +177,58 @@ footer ul {
   }
 }
 
+.hello-world { 
+  position: relative;
+  display: inline-block;
+  font-family: Monaco, Arial, Helvetica, sans-serif;
+  line-height: 24px;
+  font-size: 24px;
+  color: white;
+}
+
+.hello-world::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -15px;
+  /* Remove display: inline-block if not required to be on the same line as text etc */
+  display: inline-block;
+  background-color: #606060;
+  vertical-align: top;
+  width: 10px;
+  /* Set height to the line height of .text */
+  height: 24px;
+  /* 
+  Animation paramaters:
+  blink = animation-name, 
+  1s = animation-duration, 
+  step-end = animation-timing-function,
+  infinite = animation-iteration-count
+  */
+  -webkit-animation: blink 1s step-end infinite;
+  animation: blink 1s step-end infinite;
+}
+
+@-webkit-keyframes blink {
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+@keyframes blink {
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
 @media (max-width: 768px) {
   .about img {
     margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    height: 100vh;
   }
 }
