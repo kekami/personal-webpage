@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
 import sr from '../utils/scrollreveal';
-import profilePicture from '../../images/kevin.jpg';
+import profilePicture from '../../images/kevin2.jpg';
 
 class About extends Component {
-  constructor() {
-    super()
-  }
 
   componentDidMount() {
     const config = {
@@ -33,9 +30,9 @@ class About extends Component {
               <h4>I'm a biomedical student who in the beginning of 2017 decided to pursue a childhood passion for programming. On this journey of self-learning for which I have embarked upon, I have discovered that coding is a truly fullfilling endeavor. Never think it is too late to pursue your dreams!</h4>
               <blockquote className="blockquote">
                 <p className="lead">Over the past months I have come to a realization that I live and breath, and dream in - code. Is this life?</p>
-                <footer class="blockquote-footer"><cite title="Source Title">Philosopher Kevin</cite></footer>
+                <footer className="blockquote-footer"><cite title="Source Title">Philosopher Kevin</cite></footer>
               </blockquote>
-              <button className="btn btn-outline-primary">Resume</button>
+              {/*<button className="btn btn-outline-primary">Resume</button>*/}
             </div>
           </div>
         </div>

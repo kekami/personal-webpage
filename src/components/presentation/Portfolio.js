@@ -3,9 +3,6 @@ import sr from '../utils/scrollreveal';
 import placeholder from '../../images/placeholder.png'
 
 class Portfolio extends Component {
-  constructor() {
-    super()
-  }
 
   componentDidMount() {
     const config = {
@@ -27,7 +24,7 @@ class Portfolio extends Component {
           <h1 className="display-3">A couple of projects I've been working on.</h1>
           <h4>(Under construction)</h4>
           <br />
-          <div className="row justify-content-center">
+          <div className="row justify-content-center portfolio-item">
             <div className="col-md-6">
               <img src={placeholder} className="img-fluid rounded" alt="..." />
             </div>
@@ -37,7 +34,7 @@ class Portfolio extends Component {
             </div>
           </div>
           
-          <div className="row justify-content-center">
+          <div className="row justify-content-center portfolio-item">
             <div className="col-md-6">
               <img src={placeholder} className="img-fluid rounded" alt="..." />
             </div>
@@ -47,7 +44,7 @@ class Portfolio extends Component {
             </div>
           </div>
           
-          <div className="row justify-content-center">
+          <div className="row justify-content-center portfolio-item">
             <div className="col-md-6">
               <img src={placeholder} className="img-fluid rounded" alt="..." />
             </div>

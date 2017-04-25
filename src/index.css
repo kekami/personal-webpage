@@ -3,10 +3,6 @@ body {
   background-color: #333;
 }
 
-i {
-  color: #bbb;
-}
-
 .container-fluid {
   padding: 0;
 }
@@ -16,7 +12,7 @@ i {
 }
 
 .jumbotron h3 {
-  color: #7c3b08;
+  color: #6b2a17;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.2em;
@@ -24,15 +20,14 @@ i {
 
 .header {
   background-image: url('./images/header.jpg');
-  background-size: cover;
   padding: 30px;
   padding-top: 450px;
   padding-bottom: 150px;
-  color: white;
-  position:relative;
 }
 
-.header:before{
+.header:before,
+.skillset:before,
+.contact:before {
   content: "";
   display: block;
   filter: blur(0px) brightness(0.4);
@@ -45,146 +40,42 @@ i {
   z-index: 0;
 }
 
-.header .hello-world {
-  font-size: 1.5em;
-  font-weight: 700;
-  text-transform: uppercase;
-  opacity: 0.5;
+.skillset:before,
+.contact:before {
+  filter: blur(1px) brightness(0.4);
 }
 
-.header h1 {
-  font-size: 3em;
-}
-
-.link-style,
-.link-style:visited {
-  color: #fff;
-  font-size: 1.5em;
-}
-
-.link-style:hover{
-  color: #ddd;
-}
-
-.link-label {
-  opacity: 0.5;
-  text-transform: uppercase;
-  font-size: 0.8em;
-}
-
-.about {
+.about,
+.portfolio {
   background: #ddd;
-}
-
-.about button {
-  background: #333;
-  border: 2px solid #333;
-  color: white;
-  margin-right: 20px;
-}
-
-.about button:hover {
-  background: #444;
-  border: 2px solid #333;
-}
-
-.about h1 {
-  font-size: 3em;
 }
 
 .skillset {
   background-image: url('./images/skillset.jpg');
+}
+
+.contact {
+  background-image: url('./images/contact.jpg');
+}
+
+.header,
+.skillset,
+.contact {
   background-size: cover;
   color: white;
   position:relative;
 }
 
-.skillset:before{
-  content: "";
-  display: block;
-  filter: blur(1px) brightness(0.4);
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  background: inherit;
-  z-index: 0;
-}
-
-.skillset .badge {
-  font-weight: 300;
-}
-
-.portfolio img {
-  margin-top: 30px;
-  margin-bottom: 20px;
-}
-
-.contact {
-  background-image: url('./images/contact.jpg');
-  background-size: cover;
-  color: white;
-  position: relative;
-}
-
-.contact:before{
-  content: "";
-  display: block;
-  filter: blur(1px) brightness(0.5);
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  background: inherit;
-  z-index: 0;
-}
-
-.contact h1,
-.skillset h1,
-.portfolio h1 {
-  font-size: 3em;
-}
-
-.footer {
-  background-color: 333;
-  color: white;
-  height: 100px;
-}
-
-.footer ul {
-  display: flex;
-  list-style: none;
-  font-weight: 700;
-  font-size: 0.7em;
-  padding: 30px;
-  color: #ddd;
-}
-
-@media (max-width: 576px) {
-  .header {
-    padding: 30px;
-  }
-
-  .header .link-style {
-    font-size: 0.8em;
-  }
-
-  .header h1,
-  .about h1,
-  .contact h1 {
-    font-size: 2em;
-  }
-}
-
-.hello-world { 
+.header .hello-world {
   position: relative;
   display: inline-block;
   font-family: Monaco, Arial, Helvetica, sans-serif;
   line-height: 24px;
-  font-size: 24px;
   color: white;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  opacity: 0.5;
 }
 
 .hello-world::after {
@@ -210,6 +101,71 @@ i {
   animation: blink 1s step-end infinite;
 }
 
+.header h1,
+.about h1,
+.skillset h1,
+.portfolio h1,
+.contact h1 {
+  font-size: 3em;
+}
+
+.about button {
+  background: #333;
+  border: 2px solid #333;
+  color: white;
+  margin-right: 20px;
+}
+
+.about button:hover {
+  background: #444;
+  border: 2px solid #333;
+}
+
+.skillset .badge {
+  font-weight: 300;
+}
+
+.portfolio-item {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.portfolio-item h1 {
+  margin-top: 10px;
+}
+
+.contact .link-style {
+  font-size: 1.2em;
+}
+
+.footer {
+  background-color: 333;
+  color: white;
+  height: 100px;
+}
+
+.footer ul {
+  display: flex;
+  list-style: none;
+  font-weight: 700;
+  font-size: 0.7em;
+  padding: 30px;
+  color: #ddd;
+}
+
+.link-style,
+.link-visited {
+  color: #ddd;
+}
+
+.link-style:hover {
+  color: #aaa;
+}
+
+i {
+  color: #bbb;
+}
+
 @-webkit-keyframes blink {
   0% { opacity: 1.0; }
   50% { opacity: 0.0; }
@@ -222,6 +178,22 @@ i {
   100% { opacity: 1.0; }
 }
 
+@media (max-width: 576px) {
+  .header {
+    padding: 30px;
+  }
+
+  .header .link-style {
+    font-size: 0.8em;
+  }
+
+  .header h1,
+  .about h1,
+  .contact h1 {
+    font-size: 2em;
+  }
+}
+
 @media (max-width: 768px) {
   .about img {
     margin-bottom: 30px;
@@ -230,6 +202,6 @@ i {
 
 @media (min-width: 768px) {
   .header {
-    height: 100vh;
+    height: 100%;
   }
 }
