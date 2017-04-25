@@ -29,7 +29,7 @@ class Portfolio extends Component {
               <img src={placeholder} className="img-fluid rounded" alt="..." />
             </div>
             <div className="col-md-6">
-              <h1 className="display-3">Lorem ipsum.</h1>
+              <h2 className="display-3">Lorem ipsum.</h2>
               <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, voluptatum temporibus ipsum! Sequi a numquam alias omnis hic at quam. Odio minus obcaecati mollitia sint ex quis voluptatum temporibus! Molestias.</h4>
             </div>
           </div>
@@ -39,7 +39,7 @@ class Portfolio extends Component {
               <img src={placeholder} className="img-fluid rounded" alt="..." />
             </div>
             <div className="col-md-6">
-              <h1 className="display-3">Lorem ipsum.</h1>
+              <h2 className="display-3">Lorem ipsum.</h2>
               <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, voluptatum temporibus ipsum! Sequi a numquam alias omnis hic at quam. Odio minus obcaecati mollitia sint ex quis voluptatum temporibus! Molestias.</h4>
             </div>
           </div>
@@ -49,7 +49,7 @@ class Portfolio extends Component {
               <img src={placeholder} className="img-fluid rounded" alt="..." />
             </div>
             <div className="col-md-6">
-              <h1 className="display-3">Lorem ipsum.</h1>
+              <h2 className="display-3">Lorem ipsum.</h2>
               <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, voluptatum temporibus ipsum! Sequi a numquam alias omnis hic at quam. Odio minus obcaecati mollitia sint ex quis voluptatum temporibus! Molestias.</h4>
             </div>
           </div>
