@@ -15,7 +15,7 @@ const Home = () => (
     <Skillset />
     <Portfolio />
     <Contact />
-    <Footer />  
+    <Footer />
   </div>
 );
 

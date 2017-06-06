@@ -11,8 +11,8 @@ class Header extends Component {
       distance: '50px',
       scale: 1,
       easing: 'ease',
-    }
-    sr.reveal(this.refs.header, config)
+    };
+    sr.reveal(this.refs.header, config);
   }
   render() {
     return (

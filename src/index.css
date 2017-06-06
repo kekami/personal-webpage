@@ -135,6 +135,10 @@ body {
   margin-bottom: 20px;
 }
 
+.project-links a {
+  margin-right: 1em;
+  color: #845142;
+}
 .contact .link-style {
   font-size: 1.2em;
 }

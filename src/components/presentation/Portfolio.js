@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
+import Project from './Project';
 import sr from '../utils/scrollreveal';
-import placeholder from '../../images/placeholder.png'
+import movieDB from '../../images/movieDB.png';
 
 class Portfolio extends Component {
 
@@ -12,7 +13,7 @@ class Portfolio extends Component {
       distance: '50px',
       scale: 1,
       easing: 'ease',
-    }
+    };
     sr.reveal(this.refs.portfolio, config)
   }
 
@@ -24,38 +25,18 @@ class Portfolio extends Component {
           <h1 className="display-3">A couple of projects I've been working on.</h1>
           <h4>(Under construction)</h4>
           <br />
-          <div className="row justify-content-center portfolio-item">
-            <div className="col-md-6">
-              <img src={placeholder} className="img-fluid rounded" alt="..." />
-            </div>
-            <div className="col-md-6">
-              <h2 className="display-3">Lorem ipsum.</h2>
-              <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, voluptatum temporibus ipsum! Sequi a numquam alias omnis hic at quam. Odio minus obcaecati mollitia sint ex quis voluptatum temporibus! Molestias.</h4>
-            </div>
-          </div>
-          
-          <div className="row justify-content-center portfolio-item">
-            <div className="col-md-6">
-              <img src={placeholder} className="img-fluid rounded" alt="..." />
-            </div>
-            <div className="col-md-6">
-              <h2 className="display-3">Lorem ipsum.</h2>
-              <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, voluptatum temporibus ipsum! Sequi a numquam alias omnis hic at quam. Odio minus obcaecati mollitia sint ex quis voluptatum temporibus! Molestias.</h4>
-            </div>
-          </div>
-          
-          <div className="row justify-content-center portfolio-item">
-            <div className="col-md-6">
-              <img src={placeholder} className="img-fluid rounded" alt="..." />
-            </div>
-            <div className="col-md-6">
-              <h2 className="display-3">Lorem ipsum.</h2>
-              <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, voluptatum temporibus ipsum! Sequi a numquam alias omnis hic at quam. Odio minus obcaecati mollitia sint ex quis voluptatum temporibus! Molestias.</h4>
-            </div>
-          </div>
+          <Project
+            image={movieDB}
+            title="movieDB"
+            description="Full-stack movie database with features such as the ability to search and favorite movies. Created to practice and demonstrate React/Redux, Node/Express, REST Apis, Authentication, MongoDB and asynchronous JavaScript."
+            githubURL="https://github.com/kekami/movieDB"
+            liveURL="https://whispering-falls-55926.herokuapp.com/"
+          />
+          <Project />
+          <Project />
         </div>
       </div>
-    )
+    );
   }
 }
 

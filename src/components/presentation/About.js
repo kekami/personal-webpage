@@ -13,7 +13,7 @@ class About extends Component {
       scale: 1,
       easing: 'ease',
     }
-    sr.reveal(this.refs.about, config)
+    sr.reveal(this.refs.about, config);
   }
 
   render() {
@@ -29,15 +29,14 @@ class About extends Component {
               <h1 className="display-3">Who is Kevin?</h1>
               <h4>I'm a biomedical student who in the beginning of 2017 decided to pursue a childhood passion for programming. On this journey of self-learning for which I have embarked upon, I have discovered that coding is a truly fullfilling endeavor. Never think it is too late to pursue your dreams!</h4>
               <blockquote className="blockquote">
-                <p className="lead">Over the past months I have come to a realization that I live and breath, and dream in - code. Is this life?</p>
+                <p className="lead">Over the past months I have come to a realization that I live and breathe, and dream in - code. Is this life?</p>
                 <footer className="blockquote-footer"><cite title="Source Title">Philosopher Kevin</cite></footer>
               </blockquote>
-              {/*<button className="btn btn-outline-primary">Resume</button>*/}
             </div>
           </div>
         </div>
       </div>
-    )
+    );
   }
 }
 
