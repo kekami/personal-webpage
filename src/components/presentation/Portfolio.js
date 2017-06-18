@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Project from './Project';
 import sr from '../utils/scrollreveal';
 import movieDB from '../../images/movieDB.png';
+import webdesign from '../../images/kamimura-webdesign.jpg';
 
 class Portfolio extends Component {
 
@@ -25,14 +26,20 @@ class Portfolio extends Component {
           <h1 className="display-3">A couple of projects I've been working on.</h1>
           <h4>(Under construction)</h4>
           <br />
+          <Project 
+            image={webdesign}
+            title="Kamimura Web Design"
+            description="A fully responsive template for a company webpage written in HTML5 and SASS."
+            githubURL="https://github.com/kekami/kamimura-webdesign"
+            liveURL="http://gaudy-reaction.surge.sh/services.html"
+          />
           <Project
             image={movieDB}
-            title="movieDB"
+            title="MovieDB"
             description="Full-stack movie database with features such as the ability to search and favorite movies. Created to practice and demonstrate React/Redux, Node/Express, REST Apis, Authentication, MongoDB and asynchronous JavaScript."
             githubURL="https://github.com/kekami/movieDB"
             liveURL="https://whispering-falls-55926.herokuapp.com/"
           />
-          <Project />
           <Project />
         </div>
       </div>
