@@ -31,7 +31,7 @@ class Portfolio extends Component {
             title="Kamimura Web Design"
             description="A fully responsive template for a company webpage written in HTML5 and SASS."
             githubURL="https://github.com/kekami/kamimura-webdesign"
-            liveURL="http://gaudy-reaction.surge.sh/services.html"
+            liveURL="http://gaudy-reaction.surge.sh/"
           />
           <Project
             image={movieDB}
