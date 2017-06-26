@@ -21,22 +21,23 @@ class Skillset extends Component {
         <div className="container" ref='skillset'>
           <h3>Skillset</h3>
           <h1 className="display-3">My current tech stack</h1>
-          <h4 style={{ opacity: 0.8 }}>The React ecosystem has picked my interest and is currently the main focus of my studies. I have not yet mastered all if these subjects, but I've touched upon all of them. For some I feel comfortable with, and others for which I still have a lot to learn about.</h4>
+          <h4 style={{ opacity: 0.8 }}>My goal is to create user experiences that are simple, yet functional. I approach coding the same way, keeping my projects as trim and functional as possible. Below are the tools and technologies I use to accomplish this and I am always on the lookout for new ones.</h4>
           <br />
           <div className="row">
             <div className="col-md-3 col-sm-6">
-              <h4>Client Side JS</h4>
+              <h4>Frontend</h4>
               <h3><span className="badge badge-default">ES6</span></h3>
               <h3><span className="badge badge-default">React/Redux</span></h3>
-              <h3><span className="badge badge-default">Bootstrap</span></h3>
+              <h3><span className="badge badge-default">CSS3/SASS/BEM</span></h3>
+              <h3><span className="badge badge-default">Responsive design</span></h3>
             </div>
             <br />
             <div className="col-md-3 col-sm-6">
-              <h4>Server Side JS</h4>
+              <h4>Backend</h4>
               <h3><span className="badge badge-default">Node.js/Express</span></h3>
               <h3><span className="badge badge-default">MongoDB</span></h3>
               <h3><span className="badge badge-default">REST APIs</span></h3>
-              <h3><span className="badge badge-default">Firebase</span></h3>
+              <h3><span className="badge badge-default">JWT</span></h3>
             </div>
             <br />
             <div className="col-md-3 col-sm-6">
@@ -49,6 +50,7 @@ class Skillset extends Component {
               <h4>Deployment</h4>
               <h3><span className="badge badge-default">Nginx</span></h3>
               <h3><span className="badge badge-default">Webpack</span></h3>
+              <h3><span className="badge badge-default">Gulp</span></h3>
               <h3><span className="badge badge-default">Git</span></h3>
             </div>
             <br />

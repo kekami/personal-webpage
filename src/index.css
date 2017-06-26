@@ -121,6 +121,10 @@ body {
   border: 2px solid #333;
 }
 
+.skillset h4 {
+  font-weight: 300;
+}
+
 .skillset .badge {
   font-weight: 300;
 }

@@ -3,6 +3,8 @@ import Project from './Project';
 import sr from '../utils/scrollreveal';
 import movieDB from '../../images/movieDB.png';
 import webdesign from '../../images/kamimura-webdesign.jpg';
+import webhosting from '../../images/kamimura-hosting.jpg';
+import portfolioTravel from '../../images/portfolio-travel.jpg';
 
 class Portfolio extends Component {
 
@@ -24,14 +26,21 @@ class Portfolio extends Component {
         <div className="container" ref="portfolio">
           <h3>Portfolio</h3>
           <h1 className="display-3">A couple of projects I've been working on.</h1>
-          <h4>(Under construction)</h4>
+          <h4>Mobile first, with a fully responsive design. As it should be.</h4>
           <br />
           <Project 
-            image={webdesign}
-            title="Kamimura Web Design"
-            description="A fully responsive template for a company webpage written in HTML5 and SASS."
-            githubURL="https://github.com/kekami/kamimura-webdesign"
-            liveURL="http://gaudy-reaction.surge.sh/"
+            image={webhosting}
+            title="Hosting"
+            description="A fully responsive website for a fictional webhosting company written in HTML5 and SASS using Gulp.js as task runner."
+            githubURL="https://github.com/kekami/kamimura-hosting"
+            liveURL="http://mute-motion.surge.sh/"
+          />
+          <Project 
+            image={portfolioTravel}
+            title="Travel"
+            description="A fully responsive website for a fictional travel website written in HTML5 and SASS following BEM methodology using Gulp.js as task runner."
+            githubURL="https://github.com/kekami/portfolio-travel"
+            liveURL="http://thundering-island.surge.sh/"
           />
           <Project
             image={movieDB}
@@ -40,7 +49,6 @@ class Portfolio extends Component {
             githubURL="https://github.com/kekami/movieDB"
             liveURL="https://whispering-falls-55926.herokuapp.com/"
           />
-          <Project />
         </div>
       </div>
     );

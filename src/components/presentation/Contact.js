@@ -23,7 +23,7 @@ class Contact extends Component {
           <h4 style={{ opacity: 0.8 }}>Would you like to get in touch? Share an awesome project you've been working on? Grab a coffee and chat about web development? Hit me up!</h4>
           <br />
           <p className="lead text-center">Email:</p>
-          <p className="text-center"><a className="link-style" href="mailto:kevin.t.kamimura@gmail.com">kevin.t.kamimura(at)gmail.com</a></p>
+          <p className="text-center"><a className="link-style" href="mailto:kevin.kamimura@live.com">kevin.kamimura(at)live.com</a></p>
         </div>
       </div>
     );
